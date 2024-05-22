@@ -19,7 +19,6 @@ body {
     width: auto;
     display: block;
     margin: 0 auto;
-    /* Removed shine animation */
 }
 
 .small-title {
@@ -28,7 +27,6 @@ body {
     margin-top: 10px;
     font-weight: bold;
     text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
-    /* Removed shine animation */
 }
 
 .big-slogan {
@@ -37,7 +35,6 @@ body {
     margin-top: 10px;
     font-weight: bold;
     text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
-    /* Removed shine animation */
 }
 
 .navbar {
@@ -111,7 +108,6 @@ body {
     color: #b29600; /* Gold color */
     margin-top: 20px;
     text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
-    /* Removed shine animation */
 }
 
 .section-content p {
@@ -128,5 +124,3 @@ body {
         opacity: 1;
     }
 }
-
-/* Removed shine keyframes */
