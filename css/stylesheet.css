@@ -1,15 +1,132 @@
 body {
-
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #eaecf3;
-  }
-  
-  h2{
+    color: #333;
+    text-align: center;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.header {
+    margin: 50px 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+
+.logo {
+    height: 150px; /* Bigger logo */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    /* Removed shine animation */
+}
+
+.small-title {
+    font-size: 2.5rem; /* Larger font size */
+    color: #b29600; /* Gold color */
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
+    /* Removed shine animation */
+}
+
+.big-slogan {
+    font-size: 1.5rem; /* Smaller font size */
+    color: #b29600; /* Gold color */
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
+    /* Removed shine animation */
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky; /* Sticky navbar */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    flex-grow: 1; /* Make the links container grow to fill the navbar */
+    padding-right: 20px; /* Add some padding to the right */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth color transition */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.navbar a:hover {
+    color: #b29600; /* Gold color on hover */
+    text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
+}
+
+.buttonbuy {
+    background-color: #b29600; /* Gold color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth background transition */
+    box-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
+}
+
+.buttonbuy:hover {
+    background-color: #d4af37; /* Lighter gold color */
+    box-shadow: 0 0 20px rgba(178, 150, 0, 0.8);
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    flex-direction: column; /* Stack vertically for small screens */
+}
+
+.section-content .title {
     font-size: 2rem;
-  }
-  
-  p{
+    color: #b29600; /* Gold color */
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(178, 150, 0, 0.8);
+    /* Removed shine animation */
+}
+
+.section-content p {
     font-size: 1rem;
-  }
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+    animation-delay: 1s; /* Delay for sequential appearance */
+    max-width: 50%;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Removed shine keyframes */
